@@ -1,0 +1,24 @@
+<!-- main header with navigation -->
+<header id="home" >
+    <nav class="navbar navbar-default navbar-fixed-top"  id="tf-menu">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header ">
+                    <button class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand page-scroll">Barrier</a>
+                </div> <!-- navabr-header -->
+
+                <div class="collapse navbar-collapse clearfix" id="bs-example-navbar-collapse-1" role="navigation">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li *ngFor="let navigation_item of navigation_items"><a class="page-scroll" href="{{'#'+navigation_item}}">{{navigation_item}}</a></li>
+                    </ul>
+                </div>
+            </div> <!-- row end -->
+        </div> <!-- container end -->
+    </nav> <!-- nav end -->
+</header>
