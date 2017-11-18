@@ -18,6 +18,5 @@ export class HeaderComponent{
     }
     setNavigation(){
         this.headerService.getNavigationItems().subscribe(data=>this.navigation_items=data);
-        console.log(this.navigation_items)
     }
 }

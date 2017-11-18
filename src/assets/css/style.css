@@ -378,7 +378,7 @@ h5{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-image: url(../assets/images/overaly.png);
+	background-image: url(../images/overaly.png);
 	content:"";
 }
 
@@ -1214,7 +1214,7 @@ h5{
 ====================================*/
 
 #counter-area{
-    background: url('../assets/images/bg/bg2.jpg') no-repeat fixed 50% 0px / cover transparent;
+    background: url('../images/bg/bg2.jpg') no-repeat fixed 50% 0px / cover transparent;
     position: relative; 
     margin: 0 auto;
     width: 100%;
@@ -1521,24 +1521,24 @@ h5{
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: url(../assets/images/overaly.png);
+	background: url(../images/overaly.png);
 }
 
 .parallax1{
-	background: url(../assets/images/bg/bg5.jpg) fixed 50% 50%;
+	background: url(../images/bg/bg5.jpg) fixed 50% 50%;
 }
 .parallax2{
-	background: url(../assets/images/parallax/parallax5.jpg) fixed 50% 50%;
+	background: url(../images/parallax/parallax5.jpg) fixed 50% 50%;
 }
 .parallax3{
-	background: url(../assets/images/parallax/parallax2.jpg) fixed 50% 50%;
+	background: url(../images/parallax/parallax2.jpg) fixed 50% 50%;
 }
 .parallax4{
-	background: url(../assets/images/parallax/contact-bg.jpg) fixed 50% 50%;
+	background: url(../images/parallax/contact-bg.jpg) fixed 50% 50%;
 }
 
 #skill-bar{
-	background: url("../assets/images/parallax/parallax6.jpg") no-repeat fixed 50% 50% ;
+	background: url("../images/parallax/parallax6.jpg") no-repeat fixed 50% 50% ;
 	-webkit-background-size: cover;
 	background-size: cover;
 }

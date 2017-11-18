@@ -1,0 +1,61 @@
+<!-- TEAM section strat -->
+<section id="team" class="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-desc text-center">
+                    <div class="header-content">
+                        <h3 class="big-title">About Us</h3>
+                        <span>our expert team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h4 class="text-center">Our Vision</h4>
+            <div class="col-md-12 text-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nulla omnis eos pariatur quidem at alias rerum tempora.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nulla omnis eos pariatur quidem at alias rerum tempora.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nulla omnis eos pariatur quidem at alias rerum tempora.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nulla omnis eos pariatur quidem at alias rerum tempora. </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="team-mebers">
+                <div *ngFor="let details of team_member_details.details" class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="single-member">
+                        <img src="{{'../assets/images/team/'+details.image}}" alt="" class="img-responsive">
+                        <div class="member-overlay">
+                            <h4> Memeber details</h4>
+                            <div class="line"></div>
+                            <p>{{details.intro}}</p>
+                            <div class="member-desc">
+                                <h4>{{details.name}}</h4>
+                                <h5>web designer</h5>
+                            </div>
+                        </div>
+
+                        <div class="member-content">
+                            <div class="member-desc">
+                                <h4>{{details.name}}</h4>
+                                <h5>web designer</h5>
+                            </div>
+                            <div class="member-socail">
+                                <ul class="list-inline">
+                                    <li> <a href="#"><i class="fa fa-facebook"></i> </a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- col-md-3 end -->
+            </div>
+        </div> <!-- row end -->
+    </div> <!-- container end -->
+</section>
+<!-- TEAM section strat -->
