@@ -5,7 +5,6 @@ import { AppComponent } from '../app.component';
 import { Component } from '@angular/core';
 import {AboutUsService} from "./about-us.service";
 import {map} from "rxjs/operator/map";
-// import { map } from ''
 
 @Component({
     selector:'about-us',
@@ -18,10 +17,10 @@ export class AboutUsComponent {
     constructor(private aboutUsService:AboutUsService){}
 
     ngOnInit(){
-        this.getMemberImages();
+        this.getMemberDetails();
     }
 
-    getMemberImages(){
+    getMemberDetails(){
         this.aboutUsService.memberDetails().subscribe(data=>this.team_member_details=data);
     }
 }
