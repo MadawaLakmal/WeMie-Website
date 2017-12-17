@@ -10,10 +10,8 @@ export  class HeaderService {
         let header_items =  [
             "home",
             "services",
-            "features",
             "work",
             "team",
-            "pricing",
             "blog",
             "contact"
         ];
