@@ -6,9 +6,16 @@ import "rxjs/add/operator/map";
 
 
 export class ContactService {
-
+    /**
+     * constructor
+     * create http object
+     */
     constructor(private  http:Http) {}
 
+
+    /**
+     * add contact details by calling http api call
+     */
     addContactDetails (contactDetails) {
 
         let headers = new Headers();

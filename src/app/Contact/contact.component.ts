@@ -12,7 +12,13 @@ export class ContactComponent {
 
     contactSaveResult = {};
     contactForm:FormGroup;
+    successMessage = false;
 
+    /**
+     * constructor
+     * create fb object and contact service
+     *
+     */
     constructor(
         private contactService:ContactService,
         private fb:FormBuilder
@@ -20,11 +26,9 @@ export class ContactComponent {
         this.createContactForm();
     }
 
-    /*ngOnInit() {
-
-    }*/
-
-
+    /**
+     * create contact form
+     */
     createContactForm() {
         this.contactForm  = this.fb.group({
             name:[null,[Validators.required,Validators.maxLength(10)]],
@@ -34,11 +38,20 @@ export class ContactComponent {
         });
     }
 
+    /**
+     * add contact by calling contact service
+     */
     addContact(contactDetails) {
         this.contactService.addContactDetails(contactDetails).subscribe(data => {
             this.contactSaveResult = data;
+            console.log(data);
             if (data) {
                 this.contactForm.reset();
+                this.successMessage = true;
+                setTimeout(()=>{
+                    this.successMessage = false;
+                },5000);
+
             }
         });
     }
