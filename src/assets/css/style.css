@@ -244,16 +244,18 @@ h5{
 	transition: all .3s ease-in-out ;
 	margin: 10px 0px;
 	text-transform: capitalize;
-	background: transparent;
+	/*background: transparent;*/
+	background: #5cc5ff;
 	font-size: 16px;
-	color: #fff;
+	/*color: #fff;*/
+	color: #050505;
+	/*border: 1px solid#fff;*/
 	border: 1px solid#fff;
 }
 .btn-white:hover{
 	background: #fff;
 	color: #444;
 }
-
 #home,#profile,#service,#feature,#pricing,#blog,#contact,#work{
 	padding-bottom: 70px;
 }
@@ -378,7 +380,7 @@ h5{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-image: url(../images/overaly.png);
+	/*background-image: url(../images/overaly.png);*/
 	content:"";
 }
 
@@ -1061,7 +1063,7 @@ h5{
 ======================================*/
 
 .parallax4 .header-desc ,#contact-form label{
-	color: #fff;
+	color: #000000;
 }
 #contact-form label{
 	margin-bottom: 10px;
@@ -1079,7 +1081,7 @@ h5{
 
 #contact #contact-form, #contact .header-desc{
 	z-index: 3;
-	color: #fff;
+	color: #050505;
 }
 
 
@@ -1521,7 +1523,7 @@ h5{
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: url(../images/overaly.png);
+	/*background: url(../images/overaly.png);*/
 }
 
 .parallax1{
@@ -1534,7 +1536,7 @@ h5{
 	background: url(../images/parallax/parallax2.jpg) fixed 50% 50%;
 }
 .parallax4{
-	background: url(../images/parallax/contact-bg.jpg) fixed 50% 50%;
+	/*background: url(../images/parallax/contact-bg.jpg) fixed 50% 50%;*/
 }
 
 #skill-bar{
