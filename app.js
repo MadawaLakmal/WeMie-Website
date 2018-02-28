@@ -15,7 +15,6 @@ app.use(bodyParser.json());
 app.use(require('./email'));
 app.use(require('./emailSendCronJob'));
 
-
 //start the server
 app.listen(1338,function () {
     console.log('done')
