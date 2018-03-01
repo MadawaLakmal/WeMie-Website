@@ -46,9 +46,9 @@ export class ContactComponent {
             this.contactSaveResult = data;
             console.log(data);
             if (data) {
-                this.contactForm.reset();
                 this.successMessage = true;
                 setTimeout(()=>{
+                    this.contactForm.reset();
                     this.successMessage = false;
                 },5000);
 
